@@ -5,6 +5,15 @@
 
  const {data: datas} = await useFetch(URL)
  console.log('data', datas.value)
+
+ useHead({
+    title:`Surat ${datas.value.nama_latin}`,
+    meta:[
+        {name:'Alquran detail ayat',
+         content:'Amazing alQuran digital'
+        }
+    ]
+})
 </script>
 
 <template>

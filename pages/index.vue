@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-    title:'Quran Al-Furqon',
+    title:'Al-Quran - Home',
     meta:[
         {name:'Alquran Alfurqon',
          content:'Amazing alQuran digital'
