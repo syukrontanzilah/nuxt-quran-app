@@ -12,23 +12,23 @@
         <div class="bg-zinc-100 px-5 py-4 flex items-center justify-between shadow-md fixed w-full xl:w-[500px]">
         <NuxtLink :to=" datas.nomor ===1 ? `/` : `/${datas.nomor-1}`">
        <div class="hover:opacity-[0.8] transition">
-            <Icon name="solar:skip-previous-bold-duotone" style="color:black" size="30"/>
+            <Icon name="solar:skip-previous-bold-duotone" style="color:green" size="30"/>
         </div>        
         </NuxtLink>
  
 
         <div class="flex flex-col items-center">
-        <div class="font-bold">
+        <div class="font-bold text-green-700">
         {{datas.nomor}}. {{datas.nama_latin}} ({{ datas.nama }})
         </div>
-        <div class="text-xs capitalize">
+        <div class="text-xs capitalize text-zinc-600">
         {{datas.jumlah_ayat}} ayat - {{datas.tempat_turun}}
         </div>
         </div>
 
         <NuxtLink :to="datas.nomor === 114? `/` : `/${datas.nomor+1}`">
         <div>
-            <Icon name="solar:skip-next-bold-duotone" size="30" />
+            <Icon name="solar:skip-next-bold-duotone" size="30" style="color:green" />
         </div>        
         </NuxtLink>
 
@@ -37,10 +37,13 @@
 
     <div class=" p-6 pt-[90px]">
     <div v-for="(ayat, index) in datas.ayat" :key="index">
-    <div class="text-right text-xl font-bold mb-3 mt-3">
+    <div class="text-right text-2xl font-bold mb-4 mt-4 font-arabic leading-[60px]">
         {{ ayat.ar }}
     </div>
-    {{ ayat.idn }}
+    <div class="text-[13px]">
+ {{ayat.nomor}}. {{ ayat.idn }}    
+    </div>
+   
     </div>
     </div>
 

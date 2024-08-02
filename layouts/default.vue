@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="bg-zinc-700 min-h-screen">
+    <div class="bg-zinc-400 min-h-screen">
         <slot/>
     </div>
 </template>
