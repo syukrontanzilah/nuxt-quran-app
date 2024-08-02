@@ -32,16 +32,16 @@ const props = defineProps({
     <NuxtLink :to="link" >
     <div class="bg-white rounded-md p-5 border border-slate-100 shadow-md mb-6 cursor-pointer transition hover:bg-slate-100 flex justify-between">
         <div class="flex">
-        <div class="bg-yellow-100 h-10 w-10 rounded-full flex justify-center items-center mr-4">
+        <div class="border h-10 w-10 rounded-full flex justify-center items-center mr-4">
         {{ nomor }}
         </div>
         <div>
-        <div>{{ title }}</div>
-        <div class="capitalize">{{ jumlahAyat }} ayat - {{ turunAyat }}</div>        
+        <div class="text-[16px] font-bold">{{ title }}</div>
+        <div class="capitalize text-[13px]">{{ jumlahAyat }} ayat - {{ turunAyat }}</div>        
         </div>
 
         </div>
-        <div>
+        <div class="font-bold text-xl">
         {{ suratArab }}
         </div>
     </div>
