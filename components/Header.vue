@@ -9,7 +9,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="bg-zinc-100 h-16 flex items-center justify-center font-bold shadow-md fixed w-[500px]">
+    <div class="bg-zinc-100 h-16 flex items-center justify-center font-bold shadow-md fixed w-full xl:w-[500px]">
     {{ title }}
     </div>
 </template>
